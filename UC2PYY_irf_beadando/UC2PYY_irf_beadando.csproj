@@ -63,6 +63,9 @@
     <Compile Include="ulohelyek.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="vaszon.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="filmvalasztas.resx">
       <DependentUpon>filmvalasztas.cs</DependentUpon>
     </EmbeddedResource>
