@@ -44,5 +44,32 @@ namespace UC2PYY_irf_beadando
                 }
             }
         }
+
+        private void filmeklistbox_SelectedValueChanged(object sender, EventArgs e)
+        {
+            kivalaszt.Enabled = true;
+        }
+
+        private void kivalaszt_Click(object sender, EventArgs e)
+        {
+            if (filmeklistbox.SelectedItem.ToString() == "Sodródás" || filmeklistbox.SelectedItem.ToString() == "Karácsonyi krónikák" || filmeklistbox.SelectedItem.ToString() == "Csaló csajok" || filmeklistbox.SelectedItem.ToString() == "A Wall Street pillangói")
+            {
+                panel_termek.Visible = true;
+                egyesterem();
+            }
+            else
+            {
+                panel_termek.Visible = true;
+                kettesterem();
+            }
+        }
+
+        private void egyesterem()
+        {
+        }
+
+        private void kettesterem()
+        {
+        }
     }
 }
