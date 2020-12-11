@@ -87,9 +87,6 @@ namespace UC2PYY_irf_beadando
                     uh.Left = col * uh.Width + (int)(Math.Floor((double)(col / 4))) * lineWidth;
                     uh.Top = row * uh.Height;
                     uh.Text = sorszam++.ToString();
-
-                    
-
                     panel_termek.Controls.Add(uh);
                 }
             }
@@ -116,20 +113,9 @@ namespace UC2PYY_irf_beadando
                     uh.Left = col * uh.Width + (int)(Math.Floor((double)(col / 5))) * lineWidth;
                     uh.Top = row * uh.Height;
                     uh.Text = sorszam++.ToString();
-                    
-
                     panel_termek.Controls.Add(uh);
-
                 }
-            }
-
-            
+            } 
         }
-
-       
-
-       
-
-       
     }
 }

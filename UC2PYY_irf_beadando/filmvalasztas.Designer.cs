@@ -41,11 +41,9 @@
             this.textBox_jelszo2 = new System.Windows.Forms.TextBox();
             this.textBox_jelszo1 = new System.Windows.Forms.TextBox();
             this.textBox_email = new System.Windows.Forms.TextBox();
-            this.textBox_nev = new System.Windows.Forms.TextBox();
             this.label_jelszo2 = new System.Windows.Forms.Label();
             this.label_jelszo1 = new System.Windows.Forms.Label();
             this.label_email = new System.Windows.Forms.Label();
-            this.label_nev = new System.Windows.Forms.Label();
             this.panel_reg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -101,11 +99,9 @@
             this.panel_reg.Controls.Add(this.textBox_jelszo2);
             this.panel_reg.Controls.Add(this.textBox_jelszo1);
             this.panel_reg.Controls.Add(this.textBox_email);
-            this.panel_reg.Controls.Add(this.textBox_nev);
             this.panel_reg.Controls.Add(this.label_jelszo2);
             this.panel_reg.Controls.Add(this.label_jelszo1);
             this.panel_reg.Controls.Add(this.label_email);
-            this.panel_reg.Controls.Add(this.label_nev);
             this.panel_reg.Location = new System.Drawing.Point(802, 29);
             this.panel_reg.Name = "panel_reg";
             this.panel_reg.Size = new System.Drawing.Size(420, 500);
@@ -146,7 +142,6 @@
             // 
             this.textBox_ulohely.Location = new System.Drawing.Point(194, 143);
             this.textBox_ulohely.Name = "textBox_ulohely";
-            this.textBox_ulohely.ReadOnly = true;
             this.textBox_ulohely.Size = new System.Drawing.Size(208, 26);
             this.textBox_ulohely.TabIndex = 9;
             // 
@@ -180,13 +175,6 @@
             this.textBox_email.Size = new System.Drawing.Size(208, 26);
             this.textBox_email.TabIndex = 5;
             // 
-            // textBox_nev
-            // 
-            this.textBox_nev.Location = new System.Drawing.Point(194, 8);
-            this.textBox_nev.Name = "textBox_nev";
-            this.textBox_nev.Size = new System.Drawing.Size(208, 26);
-            this.textBox_nev.TabIndex = 4;
-            // 
             // label_jelszo2
             // 
             this.label_jelszo2.AutoSize = true;
@@ -213,15 +201,6 @@
             this.label_email.Size = new System.Drawing.Size(48, 20);
             this.label_email.TabIndex = 1;
             this.label_email.Text = "Email";
-            // 
-            // label_nev
-            // 
-            this.label_nev.AutoSize = true;
-            this.label_nev.Location = new System.Drawing.Point(13, 14);
-            this.label_nev.Name = "label_nev";
-            this.label_nev.Size = new System.Drawing.Size(36, 20);
-            this.label_nev.TabIndex = 0;
-            this.label_nev.Text = "Név";
             // 
             // filmvalasztas
             // 
@@ -250,11 +229,9 @@
         private System.Windows.Forms.TextBox textBox_jelszo2;
         private System.Windows.Forms.TextBox textBox_jelszo1;
         private System.Windows.Forms.TextBox textBox_email;
-        private System.Windows.Forms.TextBox textBox_nev;
         private System.Windows.Forms.Label label_jelszo2;
         private System.Windows.Forms.Label label_jelszo1;
         private System.Windows.Forms.Label label_email;
-        private System.Windows.Forms.Label label_nev;
         private System.Windows.Forms.Button gomb_kiiras;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button gomb_regisztrálok;
