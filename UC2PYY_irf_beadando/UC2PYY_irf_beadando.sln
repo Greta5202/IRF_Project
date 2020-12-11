@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UC2PYY_irf_beadando", "UC2PYY_irf_beadando.csproj", "{CAF853FA-3453-4C63-BCEE-A8AE1C7A2B96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAF853FA-3453-4C63-BCEE-A8AE1C7A2B96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAF853FA-3453-4C63-BCEE-A8AE1C7A2B96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAF853FA-3453-4C63-BCEE-A8AE1C7A2B96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAF853FA-3453-4C63-BCEE-A8AE1C7A2B96}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7BAF217E-AC2F-4CD0-99D3-D857DBB5BC7A}
+	EndGlobalSection
+EndGlobal
