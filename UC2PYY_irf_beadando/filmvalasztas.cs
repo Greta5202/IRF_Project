@@ -13,7 +13,6 @@ namespace UC2PYY_irf_beadando
 {
     public partial class filmvalasztas : UserControl
     {
-        // ??????????????????????????????????????????????????????????????????????????????????
         private AccountController _controller = new AccountController();
 
         private bool passwordCheckPassed;
@@ -137,11 +136,11 @@ namespace UC2PYY_irf_beadando
             } 
         }
 
-        private void OnPasswordTextChanged(object sender, EventArgs e)
+        private void textBox_jelszo1_TextChanged(object sender, EventArgs e)
         {
             PasswordCheckPassed = textBox_jelszo1.Text.Equals(textBox_jelszo2.Text);
         }
-
+        
        
         private void gomb_regisztralok_Click(object sender, EventArgs e)
         {
@@ -149,12 +148,15 @@ namespace UC2PYY_irf_beadando
             {
                 _controller.Register(
                     textBox_email.Text,
-                    textBox_jelszo1.Text);
+                    textBox_jelszo1.Text,
+                    textBox_ulohely.Text);
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
         }
+
+        
     }
 }

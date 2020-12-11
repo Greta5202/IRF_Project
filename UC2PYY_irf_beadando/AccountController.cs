@@ -18,7 +18,7 @@ namespace UC2PYY_irf_beadando
             AccountManager = new AccountManager();
         }
 
-        public Account Register(string email, string password)
+        public Account Register(string email, string password, string seat) //!!!!!!!!!!!!!!!!!!!!!!!
         {
             if (!ValidateEmail(email))
                 throw new ValidationException(
@@ -31,7 +31,8 @@ namespace UC2PYY_irf_beadando
             var account = new Account()
             {
                 Email = email,
-                Password = password
+                Password = password,
+                Seat = seat //!!!!!!!!!!!!!!!!!!!!!!!
             };
 
             var newAccount = AccountManager.CreateAccount(account);

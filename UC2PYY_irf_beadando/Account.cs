@@ -11,6 +11,6 @@ namespace UC2PYY_irf_beadando
         public Guid ID { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public int Seat { get; set; }
+        public string Seat { get; set; }
     }
 }

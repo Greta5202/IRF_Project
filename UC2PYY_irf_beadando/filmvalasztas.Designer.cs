@@ -161,6 +161,7 @@
             this.textBox_jelszo2.Name = "textBox_jelszo2";
             this.textBox_jelszo2.Size = new System.Drawing.Size(208, 26);
             this.textBox_jelszo2.TabIndex = 7;
+            this.textBox_jelszo2.TextChanged += new System.EventHandler(this.textBox_jelszo1_TextChanged);
             // 
             // textBox_jelszo1
             // 
@@ -168,6 +169,7 @@
             this.textBox_jelszo1.Name = "textBox_jelszo1";
             this.textBox_jelszo1.Size = new System.Drawing.Size(208, 26);
             this.textBox_jelszo1.TabIndex = 6;
+            this.textBox_jelszo1.TextChanged += new System.EventHandler(this.textBox_jelszo1_TextChanged);
             // 
             // textBox_email
             // 
