@@ -10,6 +10,8 @@ namespace UC2PYY_irf_beadando
 {
     class ulohelyek : Button
     {
+        
+
         public ulohelyek()
         {
             Height = 30;
@@ -31,26 +33,36 @@ namespace UC2PYY_irf_beadando
                 Enabled = false;
             }
 
+            if (BackColor == Color.Green)
+            {
+                
+            }
+
 
             MouseClick += Ulohelyek_MouseClick;
         }
 
-        private void Ulohelyek_MouseClick(object sender, MouseEventArgs e)
+        public void Ulohelyek_MouseClick(object sender, MouseEventArgs e)
         {
-            int i = 1;
+            BackColor = Color.Green;
 
-            if (i % 2 == 1)
-            {
-                this.BackColor = Color.Green;
-                i++;
-            }
-            else if (i % 2 == 0)
-            {
-                this.BackColor = Color.White;
-                i++;
-            }
+           
+            //int i = 1;
 
-            //BackColor = Color.Green; //KI KELL EGÉSZíTENI A VISSZAVONÁSSAL
+            //if (i % 2 == 1)
+            //{
+            //    this.BackColor = Color.Green;
+            //    i++;
+            //}
+            //else if (i % 2 == 0)
+            //{
+            //    this.BackColor = Color.White;
+            //    i++;
+            //}
+
+            
         }
+
+        
     }
 }

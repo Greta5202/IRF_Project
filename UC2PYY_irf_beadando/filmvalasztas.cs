@@ -21,6 +21,7 @@ namespace UC2PYY_irf_beadando
         private void filmlista_Click(object sender, EventArgs e)
         {
             GetMovies1();
+            
         }
 
         private void GetMovies1()
@@ -64,7 +65,7 @@ namespace UC2PYY_irf_beadando
             }
         }
 
-        private void egyesterem()
+        public void egyesterem()
         {
             //vászon elhelyezése
             vaszon vsz = new vaszon();
@@ -85,12 +86,14 @@ namespace UC2PYY_irf_beadando
                     uh.Top = row * uh.Height;
                     uh.Text = sorszam++.ToString();
 
+                    
+
                     panel_termek.Controls.Add(uh);
                 }
             }
         }
 
-        private void kettesterem()
+        public void kettesterem()
         {
             //vászon elhelyezése
             vaszon vsz = new vaszon();
@@ -101,6 +104,7 @@ namespace UC2PYY_irf_beadando
             //helyek elhelyezése
             int lineWidth = 40;
             int sorszam = 1;
+            
 
             for (int row = 2; row < 10; row++)
             {
@@ -110,16 +114,29 @@ namespace UC2PYY_irf_beadando
                     uh.Left = col * uh.Width + (int)(Math.Floor((double)(col / 5))) * lineWidth;
                     uh.Top = row * uh.Height;
                     uh.Text = sorszam++.ToString();
-
+                                                  
                     panel_termek.Controls.Add(uh);
+                                       
+                    if (uh.BackColor == Color.Green)
+                    {
+                        textBox1.Text= uh.Text;
+                    }
+
+
                 }
             }
-
         }
+
 
         private void gomb_lefoglal_Click(object sender, EventArgs e)
         {
             panel_reg.Visible = true;
+            
+            
+            
+            
         }
+
+       
     }
 }
