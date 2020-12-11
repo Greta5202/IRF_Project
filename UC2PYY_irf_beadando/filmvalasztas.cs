@@ -66,10 +66,60 @@ namespace UC2PYY_irf_beadando
 
         private void egyesterem()
         {
+            //vászon elhelyezése
+            vaszon vsz = new vaszon();
+            vsz.Location = new System.Drawing.Point(0, 0);
+            vsz.Left = panel_termek.Size.Width / 2 - vsz.Size.Width / 2;
+            panel_termek.Controls.Add(vsz);
+
+            //helyek elhelyezése
+            int lineWidth = 40;
+            int sorszam = 1;
+
+            for (int row = 2; row < 10; row++)
+            {
+                for (int col = 1; col < 7; col++)
+                {
+                    ulohelyek uh = new ulohelyek();
+                    uh.Left = col * uh.Width + (int)(Math.Floor((double)(col / 4))) * lineWidth;
+                    uh.Top = row * uh.Height;
+                    uh.Text = sorszam++.ToString();
+
+                    panel_termek.Controls.Add(uh);
+                }
+            }
         }
 
         private void kettesterem()
         {
+            //vászon elhelyezése
+            vaszon vsz = new vaszon();
+            vsz.Location = new System.Drawing.Point(0, 0);
+            vsz.Left = panel_termek.Size.Width / 2 - vsz.Size.Width / 2;
+            panel_termek.Controls.Add(vsz);
+
+            //helyek elhelyezése
+            int lineWidth = 40;
+            int sorszam = 1;
+
+            for (int row = 2; row < 10; row++)
+            {
+                for (int col = 1; col < 7; col++)
+                {
+                    ulohelyek uh = new ulohelyek();
+                    uh.Left = col * uh.Width + (int)(Math.Floor((double)(col / 5))) * lineWidth;
+                    uh.Top = row * uh.Height;
+                    uh.Text = sorszam++.ToString();
+
+                    panel_termek.Controls.Add(uh);
+                }
+            }
+
+        }
+
+        private void gomb_lefoglal_Click(object sender, EventArgs e)
+        {
+            panel_reg.Visible = true;
         }
     }
 }
