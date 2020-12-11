@@ -35,7 +35,7 @@
             this.panel_reg = new System.Windows.Forms.Panel();
             this.gomb_kiiras = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.gomb_regisztrálok = new System.Windows.Forms.Button();
+            this.gomb_regisztralok = new System.Windows.Forms.Button();
             this.textBox_ulohely = new System.Windows.Forms.TextBox();
             this.label_ulohely = new System.Windows.Forms.Label();
             this.textBox_jelszo2 = new System.Windows.Forms.TextBox();
@@ -93,7 +93,7 @@
             this.panel_reg.BackColor = System.Drawing.SystemColors.Info;
             this.panel_reg.Controls.Add(this.gomb_kiiras);
             this.panel_reg.Controls.Add(this.dataGridView1);
-            this.panel_reg.Controls.Add(this.gomb_regisztrálok);
+            this.panel_reg.Controls.Add(this.gomb_regisztralok);
             this.panel_reg.Controls.Add(this.textBox_ulohely);
             this.panel_reg.Controls.Add(this.label_ulohely);
             this.panel_reg.Controls.Add(this.textBox_jelszo2);
@@ -128,15 +128,16 @@
             this.dataGridView1.Size = new System.Drawing.Size(385, 126);
             this.dataGridView1.TabIndex = 10;
             // 
-            // gomb_regisztrálok
+            // gomb_regisztralok
             // 
-            this.gomb_regisztrálok.Enabled = false;
-            this.gomb_regisztrálok.Location = new System.Drawing.Point(120, 186);
-            this.gomb_regisztrálok.Name = "gomb_regisztrálok";
-            this.gomb_regisztrálok.Size = new System.Drawing.Size(164, 48);
-            this.gomb_regisztrálok.TabIndex = 5;
-            this.gomb_regisztrálok.Text = "Regisztrálok";
-            this.gomb_regisztrálok.UseVisualStyleBackColor = true;
+            this.gomb_regisztralok.Enabled = false;
+            this.gomb_regisztralok.Location = new System.Drawing.Point(120, 186);
+            this.gomb_regisztralok.Name = "gomb_regisztralok";
+            this.gomb_regisztralok.Size = new System.Drawing.Size(164, 48);
+            this.gomb_regisztralok.TabIndex = 5;
+            this.gomb_regisztralok.Text = "Regisztrálok";
+            this.gomb_regisztralok.UseVisualStyleBackColor = true;
+            this.gomb_regisztralok.Click += new System.EventHandler(this.gomb_regisztralok_Click);
             // 
             // textBox_ulohely
             // 
@@ -234,7 +235,7 @@
         private System.Windows.Forms.Label label_email;
         private System.Windows.Forms.Button gomb_kiiras;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button gomb_regisztrálok;
+        private System.Windows.Forms.Button gomb_regisztralok;
         internal System.Windows.Forms.Panel panel_reg;
         internal System.Windows.Forms.TextBox textBox_ulohely;
         internal System.Windows.Forms.Panel panel_termek;

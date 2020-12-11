@@ -13,15 +13,34 @@ namespace UC2PYY_irf_beadando
 {
     public partial class filmvalasztas : UserControl
     {
+        // ??????????????????????????????????????????????????????????????????????????????????
+        private AccountController _controller = new AccountController();
+
+        private bool passwordCheckPassed;
+        public bool PasswordCheckPassed
+        {
+            get { return passwordCheckPassed; }
+            set
+            {
+                passwordCheckPassed = value;
+                gomb_regisztralok.Enabled = passwordCheckPassed;
+                if (passwordCheckPassed)
+                    textBox_jelszo2.BackColor = Color.White;
+                else
+                    textBox_jelszo2.BackColor = Color.Red;
+            }
+        }
+
         public filmvalasztas()
         {
             InitializeComponent();
+            PasswordCheckPassed = true;
+            dataGridView1.DataSource = _controller.AccountManager.Accounts;
         }
 
         private void filmlista_Click(object sender, EventArgs e)
         {
             GetMovies1();
-            
         }
 
         private void GetMovies1()
@@ -116,6 +135,26 @@ namespace UC2PYY_irf_beadando
                     panel_termek.Controls.Add(uh);
                 }
             } 
+        }
+
+        private void OnPasswordTextChanged(object sender, EventArgs e)
+        {
+            PasswordCheckPassed = textBox_jelszo1.Text.Equals(textBox_jelszo2.Text);
+        }
+
+       
+        private void gomb_regisztralok_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                _controller.Register(
+                    textBox_email.Text,
+                    textBox_jelszo1.Text);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
