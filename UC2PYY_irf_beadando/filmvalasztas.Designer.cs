@@ -44,6 +44,9 @@
             this.label_jelszo2 = new System.Windows.Forms.Label();
             this.label_jelszo1 = new System.Windows.Forms.Label();
             this.label_email = new System.Windows.Forms.Label();
+            this.textBox_elsoep = new System.Windows.Forms.TextBox();
+            this.textBox_kateg = new System.Windows.Forms.TextBox();
+            this.textBox_hossz = new System.Windows.Forms.TextBox();
             this.panel_reg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -110,13 +113,13 @@
             // 
             // gomb_kiiras
             // 
-            this.gomb_kiiras.Enabled = false;
             this.gomb_kiiras.Location = new System.Drawing.Point(120, 381);
             this.gomb_kiiras.Name = "gomb_kiiras";
             this.gomb_kiiras.Size = new System.Drawing.Size(164, 48);
             this.gomb_kiiras.TabIndex = 11;
             this.gomb_kiiras.Text = "Mentés";
             this.gomb_kiiras.UseVisualStyleBackColor = true;
+            this.gomb_kiiras.Click += new System.EventHandler(this.gomb_kiiras_Click);
             // 
             // dataGridView1
             // 
@@ -159,6 +162,7 @@
             // 
             this.textBox_jelszo2.Location = new System.Drawing.Point(194, 111);
             this.textBox_jelszo2.Name = "textBox_jelszo2";
+            this.textBox_jelszo2.PasswordChar = '*';
             this.textBox_jelszo2.Size = new System.Drawing.Size(208, 26);
             this.textBox_jelszo2.TabIndex = 7;
             this.textBox_jelszo2.TextChanged += new System.EventHandler(this.textBox_jelszo1_TextChanged);
@@ -167,6 +171,7 @@
             // 
             this.textBox_jelszo1.Location = new System.Drawing.Point(194, 79);
             this.textBox_jelszo1.Name = "textBox_jelszo1";
+            this.textBox_jelszo1.PasswordChar = '*';
             this.textBox_jelszo1.Size = new System.Drawing.Size(208, 26);
             this.textBox_jelszo1.TabIndex = 6;
             this.textBox_jelszo1.TextChanged += new System.EventHandler(this.textBox_jelszo1_TextChanged);
@@ -205,10 +210,34 @@
             this.label_email.TabIndex = 1;
             this.label_email.Text = "Email";
             // 
+            // textBox_elsoep
+            // 
+            this.textBox_elsoep.Location = new System.Drawing.Point(93, 325);
+            this.textBox_elsoep.Name = "textBox_elsoep";
+            this.textBox_elsoep.Size = new System.Drawing.Size(100, 26);
+            this.textBox_elsoep.TabIndex = 5;
+            // 
+            // textBox_kateg
+            // 
+            this.textBox_kateg.Location = new System.Drawing.Point(93, 357);
+            this.textBox_kateg.Name = "textBox_kateg";
+            this.textBox_kateg.Size = new System.Drawing.Size(100, 26);
+            this.textBox_kateg.TabIndex = 6;
+            // 
+            // textBox_hossz
+            // 
+            this.textBox_hossz.Location = new System.Drawing.Point(93, 389);
+            this.textBox_hossz.Name = "textBox_hossz";
+            this.textBox_hossz.Size = new System.Drawing.Size(100, 26);
+            this.textBox_hossz.TabIndex = 7;
+            // 
             // filmvalasztas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBox_hossz);
+            this.Controls.Add(this.textBox_kateg);
+            this.Controls.Add(this.textBox_elsoep);
             this.Controls.Add(this.panel_reg);
             this.Controls.Add(this.panel_termek);
             this.Controls.Add(this.kivalaszt);
@@ -220,6 +249,7 @@
             this.panel_reg.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -241,5 +271,8 @@
         internal System.Windows.Forms.Panel panel_reg;
         internal System.Windows.Forms.TextBox textBox_ulohely;
         internal System.Windows.Forms.Panel panel_termek;
+        private System.Windows.Forms.TextBox textBox_elsoep;
+        private System.Windows.Forms.TextBox textBox_kateg;
+        private System.Windows.Forms.TextBox textBox_hossz;
     }
 }

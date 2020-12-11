@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.IO;
 
 namespace UC2PYY_irf_beadando
 {
@@ -68,6 +69,9 @@ namespace UC2PYY_irf_beadando
         {
             kivalaszt.Enabled = true;
         }
+
+       
+        
 
         private void kivalaszt_Click(object sender, EventArgs e)
         {
@@ -157,6 +161,40 @@ namespace UC2PYY_irf_beadando
             }
         }
 
-        
+        private void gomb_kiiras_Click(object sender, EventArgs e)
+        {
+            csv_kiiras();
+        }
+
+        private void csv_kiiras() 
+        {
+            SaveFileDialog sfd = new SaveFileDialog();
+            sfd.InitialDirectory = Application.StartupPath;
+            sfd.Filter = "Foglalas (*.csv)|*.csv";
+            sfd.FileName = "Foglalas";
+            sfd.DefaultExt = "csv";
+            sfd.AddExtension = true;
+            if (sfd.ShowDialog() != DialogResult.OK) return;
+            using (StreamWriter sw = new StreamWriter(sfd.FileName, false, Encoding.UTF8))
+            {
+                
+                sw.Write("Email");
+                sw.Write(";");
+                sw.Write("Jelszó");
+                sw.Write(";");
+                sw.Write("Ülőhely");
+                
+                sw.WriteLine();
+
+                sw.Write(textBox_email.Text);
+                sw.Write(";");
+                sw.Write(textBox_jelszo1.Text);
+                sw.Write(";");
+                sw.Write(textBox_ulohely.Text);
+
+            }
+
+            MessageBox.Show("Foglalásodat sikeresen lementettük! Kérlek, zárd be az alkalmazást!");
+        }
     }
 }
