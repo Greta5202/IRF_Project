@@ -33,6 +33,7 @@
             this.kivalaszt = new System.Windows.Forms.Button();
             this.panel_termek = new System.Windows.Forms.Panel();
             this.panel_reg = new System.Windows.Forms.Panel();
+            this.gomb_regi = new System.Windows.Forms.Button();
             this.gomb_kiiras = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBox_ulohely = new System.Windows.Forms.TextBox();
@@ -47,7 +48,6 @@
             this.textBox_szurke = new System.Windows.Forms.TextBox();
             this.label_zold = new System.Windows.Forms.Label();
             this.label_szurke = new System.Windows.Forms.Label();
-            this.gomb_regi = new System.Windows.Forms.Button();
             this.panel_reg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -118,6 +118,19 @@
             this.panel_reg.Size = new System.Drawing.Size(420, 500);
             this.panel_reg.TabIndex = 4;
             this.panel_reg.Visible = false;
+            // 
+            // gomb_regi
+            // 
+            this.gomb_regi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.gomb_regi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gomb_regi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
+            this.gomb_regi.Location = new System.Drawing.Point(120, 195);
+            this.gomb_regi.Name = "gomb_regi";
+            this.gomb_regi.Size = new System.Drawing.Size(164, 48);
+            this.gomb_regi.TabIndex = 12;
+            this.gomb_regi.Text = "Regisztráció";
+            this.gomb_regi.UseVisualStyleBackColor = false;
+            this.gomb_regi.Click += new System.EventHandler(this.button1_Click);
             // 
             // gomb_kiiras
             // 
@@ -220,7 +233,7 @@
             // 
             // textBox_zold
             // 
-            this.textBox_zold.BackColor = System.Drawing.Color.LimeGreen;
+            this.textBox_zold.BackColor = System.Drawing.Color.Green;
             this.textBox_zold.Location = new System.Drawing.Point(241, 463);
             this.textBox_zold.Name = "textBox_zold";
             this.textBox_zold.Size = new System.Drawing.Size(27, 26);
@@ -229,7 +242,7 @@
             // 
             // textBox_szurke
             // 
-            this.textBox_szurke.BackColor = System.Drawing.Color.LightSlateGray;
+            this.textBox_szurke.BackColor = System.Drawing.Color.WhiteSmoke;
             this.textBox_szurke.Location = new System.Drawing.Point(241, 495);
             this.textBox_szurke.Name = "textBox_szurke";
             this.textBox_szurke.Size = new System.Drawing.Size(27, 26);
@@ -257,19 +270,6 @@
             this.label_szurke.TabIndex = 8;
             this.label_szurke.Text = "Foglalt";
             this.label_szurke.Visible = false;
-            // 
-            // gomb_regi
-            // 
-            this.gomb_regi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.gomb_regi.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.gomb_regi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
-            this.gomb_regi.Location = new System.Drawing.Point(120, 195);
-            this.gomb_regi.Name = "gomb_regi";
-            this.gomb_regi.Size = new System.Drawing.Size(164, 48);
-            this.gomb_regi.TabIndex = 12;
-            this.gomb_regi.Text = "Regisztráció";
-            this.gomb_regi.UseVisualStyleBackColor = false;
-            this.gomb_regi.Click += new System.EventHandler(this.button1_Click);
             // 
             // filmvalasztas
             // 

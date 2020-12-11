@@ -54,10 +54,10 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(78)))), ((int)(((byte)(184)))), ((int)(((byte)(206)))));
             this.label1.Location = new System.Drawing.Point(300, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(773, 36);
+            this.label1.Size = new System.Drawing.Size(785, 36);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Üdvözöljük az Galaxy mozi honlaján! Helyfoglaláshoz kérem nyomja az alábbi gombot" +
-    ":";
+            this.label1.Text = "Üdvözöljük az Galaxy mozi honlapján! Helyfoglaláshoz kérem nyomja az alábbi gombo" +
+    "t:";
             // 
             // helyfoglalo
             // 
