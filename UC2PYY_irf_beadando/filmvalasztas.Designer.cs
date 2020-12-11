@@ -32,8 +32,10 @@
             this.filmeklistbox = new System.Windows.Forms.ListBox();
             this.kivalaszt = new System.Windows.Forms.Button();
             this.panel_termek = new System.Windows.Forms.Panel();
-            this.gomb_lefoglal = new System.Windows.Forms.Button();
             this.panel_reg = new System.Windows.Forms.Panel();
+            this.gomb_kiiras = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gomb_regisztrálok = new System.Windows.Forms.Button();
             this.textBox_ulohely = new System.Windows.Forms.TextBox();
             this.label_ulohely = new System.Windows.Forms.Label();
             this.textBox_jelszo2 = new System.Windows.Forms.TextBox();
@@ -44,11 +46,6 @@
             this.label_jelszo1 = new System.Windows.Forms.Label();
             this.label_email = new System.Windows.Forms.Label();
             this.label_nev = new System.Windows.Forms.Label();
-            this.gomb_regisztrálok = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.gomb_kiiras = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.panel_termek.SuspendLayout();
             this.panel_reg.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -87,22 +84,11 @@
             // panel_termek
             // 
             this.panel_termek.BackColor = System.Drawing.SystemColors.Info;
-            this.panel_termek.Controls.Add(this.textBox1);
             this.panel_termek.Location = new System.Drawing.Point(344, 29);
             this.panel_termek.Name = "panel_termek";
             this.panel_termek.Size = new System.Drawing.Size(420, 500);
             this.panel_termek.TabIndex = 3;
             this.panel_termek.Visible = false;
-            // 
-            // gomb_lefoglal
-            // 
-            this.gomb_lefoglal.Location = new System.Drawing.Point(600, 535);
-            this.gomb_lefoglal.Name = "gomb_lefoglal";
-            this.gomb_lefoglal.Size = new System.Drawing.Size(164, 48);
-            this.gomb_lefoglal.TabIndex = 4;
-            this.gomb_lefoglal.Text = "Lefoglalom";
-            this.gomb_lefoglal.UseVisualStyleBackColor = true;
-            this.gomb_lefoglal.Click += new System.EventHandler(this.gomb_lefoglal_Click);
             // 
             // panel_reg
             // 
@@ -125,6 +111,36 @@
             this.panel_reg.Size = new System.Drawing.Size(420, 500);
             this.panel_reg.TabIndex = 4;
             this.panel_reg.Visible = false;
+            // 
+            // gomb_kiiras
+            // 
+            this.gomb_kiiras.Enabled = false;
+            this.gomb_kiiras.Location = new System.Drawing.Point(120, 381);
+            this.gomb_kiiras.Name = "gomb_kiiras";
+            this.gomb_kiiras.Size = new System.Drawing.Size(164, 48);
+            this.gomb_kiiras.TabIndex = 11;
+            this.gomb_kiiras.Text = "Mentés";
+            this.gomb_kiiras.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(17, 249);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.RowTemplate.Height = 28;
+            this.dataGridView1.Size = new System.Drawing.Size(385, 126);
+            this.dataGridView1.TabIndex = 10;
+            // 
+            // gomb_regisztrálok
+            // 
+            this.gomb_regisztrálok.Enabled = false;
+            this.gomb_regisztrálok.Location = new System.Drawing.Point(120, 186);
+            this.gomb_regisztrálok.Name = "gomb_regisztrálok";
+            this.gomb_regisztrálok.Size = new System.Drawing.Size(164, 48);
+            this.gomb_regisztrálok.TabIndex = 5;
+            this.gomb_regisztrálok.Text = "Regisztrálok";
+            this.gomb_regisztrálok.UseVisualStyleBackColor = true;
             // 
             // textBox_ulohely
             // 
@@ -207,57 +223,17 @@
             this.label_nev.TabIndex = 0;
             this.label_nev.Text = "Név";
             // 
-            // gomb_regisztrálok
-            // 
-            this.gomb_regisztrálok.Enabled = false;
-            this.gomb_regisztrálok.Location = new System.Drawing.Point(120, 186);
-            this.gomb_regisztrálok.Name = "gomb_regisztrálok";
-            this.gomb_regisztrálok.Size = new System.Drawing.Size(164, 48);
-            this.gomb_regisztrálok.TabIndex = 5;
-            this.gomb_regisztrálok.Text = "Regisztrálok";
-            this.gomb_regisztrálok.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 249);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(385, 126);
-            this.dataGridView1.TabIndex = 10;
-            // 
-            // gomb_kiiras
-            // 
-            this.gomb_kiiras.Enabled = false;
-            this.gomb_kiiras.Location = new System.Drawing.Point(120, 381);
-            this.gomb_kiiras.Name = "gomb_kiiras";
-            this.gomb_kiiras.Size = new System.Drawing.Size(164, 48);
-            this.gomb_kiiras.TabIndex = 11;
-            this.gomb_kiiras.Text = "Mentés";
-            this.gomb_kiiras.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(138, 422);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 26);
-            this.textBox1.TabIndex = 0;
-            // 
             // filmvalasztas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel_reg);
-            this.Controls.Add(this.gomb_lefoglal);
             this.Controls.Add(this.panel_termek);
             this.Controls.Add(this.kivalaszt);
             this.Controls.Add(this.filmeklistbox);
             this.Controls.Add(this.filmlista);
             this.Name = "filmvalasztas";
             this.Size = new System.Drawing.Size(1240, 628);
-            this.panel_termek.ResumeLayout(false);
-            this.panel_termek.PerformLayout();
             this.panel_reg.ResumeLayout(false);
             this.panel_reg.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -270,7 +246,6 @@
         private System.Windows.Forms.Button filmlista;
         private System.Windows.Forms.ListBox filmeklistbox;
         private System.Windows.Forms.Button kivalaszt;
-        private System.Windows.Forms.Button gomb_lefoglal;
         private System.Windows.Forms.Label label_ulohely;
         private System.Windows.Forms.TextBox textBox_jelszo2;
         private System.Windows.Forms.TextBox textBox_jelszo1;
@@ -286,6 +261,5 @@
         internal System.Windows.Forms.Panel panel_reg;
         internal System.Windows.Forms.TextBox textBox_ulohely;
         internal System.Windows.Forms.Panel panel_termek;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }

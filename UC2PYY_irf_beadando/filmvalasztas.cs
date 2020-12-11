@@ -56,11 +56,13 @@ namespace UC2PYY_irf_beadando
             if (filmeklistbox.SelectedItem.ToString() == "Sodródás" || filmeklistbox.SelectedItem.ToString() == "Karácsonyi krónikák" || filmeklistbox.SelectedItem.ToString() == "Csaló csajok" || filmeklistbox.SelectedItem.ToString() == "A Wall Street pillangói")
             {
                 panel_termek.Visible = true;
+                panel_reg.Visible = true;
                 egyesterem();
             }
             else
             {
                 panel_termek.Visible = true;
+                panel_reg.Visible = true;
                 kettesterem();
             }
         }
@@ -114,28 +116,19 @@ namespace UC2PYY_irf_beadando
                     uh.Left = col * uh.Width + (int)(Math.Floor((double)(col / 5))) * lineWidth;
                     uh.Top = row * uh.Height;
                     uh.Text = sorszam++.ToString();
-                                                  
-                    panel_termek.Controls.Add(uh);
-                                       
-                    if (uh.BackColor == Color.Green)
-                    {
-                        textBox1.Text= uh.Text;
-                    }
+                    
 
+                    panel_termek.Controls.Add(uh);
 
                 }
             }
+
+            
         }
 
+       
 
-        private void gomb_lefoglal_Click(object sender, EventArgs e)
-        {
-            panel_reg.Visible = true;
-            
-            
-            
-            
-        }
+       
 
        
     }
