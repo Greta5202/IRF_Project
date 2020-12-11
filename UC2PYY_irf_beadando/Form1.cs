@@ -15,6 +15,8 @@ namespace UC2PYY_irf_beadando
         public Form1()
         {
             InitializeComponent();
+            label1.Left = panel1.Size.Width / 2 - label1.Size.Width / 2;
+            helyfoglalo.Left = panel1.Size.Width / 2 - label1.Size.Width / 2;
         }
 
         private void helyfoglalo_Click(object sender, EventArgs e)

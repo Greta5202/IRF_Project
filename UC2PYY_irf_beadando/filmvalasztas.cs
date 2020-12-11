@@ -23,7 +23,7 @@ namespace UC2PYY_irf_beadando
             set
             {
                 passwordCheckPassed = value;
-                gomb_regisztralok.Enabled = passwordCheckPassed;
+                gomb_kiiras.Enabled = passwordCheckPassed;
                 if (passwordCheckPassed)
                     textBox_jelszo2.BackColor = Color.White;
                 else
@@ -87,6 +87,11 @@ namespace UC2PYY_irf_beadando
                 panel_reg.Visible = true;
                 kettesterem();
             }
+
+            label_zold.Visible = true;
+            label_szurke.Visible = true;
+            textBox_zold.Visible = true;
+            textBox_szurke.Visible = true;
         }
 
         public void egyesterem()
@@ -144,9 +149,9 @@ namespace UC2PYY_irf_beadando
         {
             PasswordCheckPassed = textBox_jelszo1.Text.Equals(textBox_jelszo2.Text);
         }
-        
-       
-        private void gomb_regisztralok_Click(object sender, EventArgs e)
+
+
+        private void button1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -159,10 +164,12 @@ namespace UC2PYY_irf_beadando
             {
                 MessageBox.Show(ex.Message);
             }
+
         }
 
         private void gomb_kiiras_Click(object sender, EventArgs e)
         {
+           
             csv_kiiras();
         }
 
@@ -196,5 +203,7 @@ namespace UC2PYY_irf_beadando
 
             MessageBox.Show("Foglalásodat sikeresen lementettük! Kérlek, zárd be az alkalmazást!");
         }
+
+       
     }
 }
