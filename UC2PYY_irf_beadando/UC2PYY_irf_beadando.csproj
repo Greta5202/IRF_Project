@@ -60,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ulohelyek.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="filmvalasztas.resx">
       <DependentUpon>filmvalasztas.cs</DependentUpon>
     </EmbeddedResource>
