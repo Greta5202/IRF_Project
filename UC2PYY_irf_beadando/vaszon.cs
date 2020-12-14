@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace UC2PYY_irf_beadando
 {
-    class vaszon : Button
+    class vaszon : Label
     {
         public vaszon()
         {

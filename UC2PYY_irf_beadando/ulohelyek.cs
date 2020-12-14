@@ -29,9 +29,5 @@ namespace UC2PYY_irf_beadando
             }
 
         }
-
-        
-
-        
     }
 }
